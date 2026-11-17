@@ -25,7 +25,7 @@ the alignment term. Author: GalexY3. Preprint source: `paper/main.tex`.
 **Credit.** Advantage Alignment, Eq. 8 and Theorem 3 are the work of Duque, Aghajohari,
 Cooijmans, Ciuca, Zhang, Gidel and Courville. J. A. Duque publicly confirmed the scope issue
 and proposed the repair analysed here in
-https://github.com/jduquevan/advantage-alignment/issues/12. The idea is the author's. AI tools
+https://github.com/jduquevan/advantage-alignment/issues/12. The idea is the author's and AI tools
 assisted with programming, the Lean proofs and drafting, under the author's direction.
 
 **License.** Code: MIT. Text: CC BY 4.0.
