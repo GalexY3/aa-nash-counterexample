@@ -1,5 +1,6 @@
 import AaNash.Basic
 import AaNash.StrategicEquivalence
+import AaNash.WelfareIncentive
 
 /-! Axiom audit: every listed theorem must depend only on propext, Classical.choice, Quot.sound. -/
 #print axioms AaNash.shaping_eq_cov
@@ -21,3 +22,11 @@ import AaNash.StrategicEquivalence
 #print axioms AaNash.R1devL_shift
 #print axioms AaNash.deviation_gain_independent_of_lam
 #print axioms AaNash.aa_not_invariant_to_strategic_equivalence
+#print axioms AaNash.WI.aaTerm_eq
+#print axioms AaNash.WI.aa_invariant_own_effect
+#print axioms AaNash.WI.aa_invariant_interaction
+#print axioms AaNash.WI.aa_reads_welfare
+#print axioms AaNash.WI.lola_invariant_welfare
+#print axioms AaNash.WI.lola_invariant_own_effect
+#print axioms AaNash.WI.lola_reads_interaction
+#print axioms AaNash.WI.separation

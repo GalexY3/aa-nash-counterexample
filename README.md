@@ -18,6 +18,10 @@ Preprint: [`paper/main.pdf`](paper/main.pdf) (source `paper/main.tex`).
   the opponent's action leaves every unilateral deviation gain and the equilibrium unchanged, but the
   equilibrium update becomes (0, βγ³λ/4, βγ³λ/4). The counterexample (λ = 1) is driven entirely by this
   component. How past experience reaches the current state (memory η) can also cancel or reverse the update.
+- **Welfare vs incentive shaping.** In normal-form games, the AA alignment term depends only on the main
+  effect of the agent's action on the opponent's payoff (a welfare externality); first-order LOLA depends
+  only on the interaction (how the agent's action changes the opponent's incentives). Machine-checked,
+  with separating "gift" and "incentive" games.
 - **Repairs.** Marginalizing the opponent's current advantage removes the term for every policy.
   The authors' suggested repair (issue #12) preserves mixed Markov-perfect equilibria, but can
   suppress the alignment signal.
