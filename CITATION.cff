@@ -7,6 +7,12 @@ authors:
     alias: GalexY
     affiliation: Universidad de Salamanca
 date-released: 2026-11-17
+doi: 10.5281/zenodo.24325532
+version: v1.0.0
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24325533
+    description: Version v1.0.0
 url: "https://github.com/GalexY3/aa-nash-counterexample"
 license: MIT
 references:

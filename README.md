@@ -1,5 +1,7 @@
 # Advantage Alignment does not preserve mixed Nash equilibria
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24325533.svg)](https://doi.org/10.5281/zenodo.24325533)
+
 A machine-checked counterexample to Theorem 3 of *Advantage Alignment Algorithms*
 (Duque et al., ICLR 2025, arXiv:2406.14662), plus an exact covariance characterization of
 the alignment term.
