@@ -33,6 +33,9 @@ Preprint: [`paper/main.pdf`](paper/main.pdf) (source `paper/main.tex`).
 - `verify/verify_counterexample.py` (NumPy) reproduces the counterexample (`ALL CHECKS PASSED`);
   `verify_aggregation.py` checks the history aggregation and the memory control with exact fractions;
   `verify_strategic_equivalence.py` checks the λ control (640 pure Markov profiles, 10 exact fields).
+- `verify/author_code/`: runs the authors' **unmodified** AA functions (fetched at commit 2065e43 with pinned
+  hashes, not redistributed) on the λ family: no movement at λ = 0, movement with the sign of λ otherwise,
+  in all 80 exact-advantage configurations.
 - `preregistration/`: the formal statements, fixed before any proof was written (in Spanish).
 
 **Credit.** Advantage Alignment, Eq. 8 and Theorem 3 are the work of Duque, Aghajohari,

@@ -1,0 +1,4363 @@
+{
+ "status": "PREREGISTERED_C07",
+ "P1_lambda0_no_movement": true,
+ "P2_lambda_nonzero_moves": true,
+ "n_configs": 240,
+ "n_preregistered": 80,
+ "failures": [],
+ "rows": [
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.03750000149011612,
+    -0.03750000149011612
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562479170774193
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.037500000000000006,
+    -0.037500000000000006
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478247101527
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.03750000149011612,
+    -0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.0018562478798440987
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.037500000000000006,
+    -0.037500000000000006
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.0018562478247101458
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.03750000149011612,
+    -0.03749999776482582
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.001856247797886651
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.037500000000000006,
+    -0.037500000000000006
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.0018562478247101943
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.07238052040338516,
+    -0.07238052040338516
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828201365646697
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.07238051269472122,
+    -0.0723805126947212
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828197365917053
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.053006116300821304,
+    -0.0530061200261116
+   ],
+   "player2": [
+    0.0,
+    0.004532024264335632,
+    -0.004532024264335632
+   ],
+   "max_gain": 0.002623796695562869
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.05300611527526146,
+    -0.05300611527526146
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.004532022856034865,
+    -0.004532022856034865
+   ],
+   "max_gain": 0.002623796562840508
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.05151637643575668,
+    -0.05151638388633728
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0046364739537239075,
+    -0.0046364739537239075
+   ],
+   "max_gain": 0.002550055185581747
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.05151637936595598,
+    -0.05151637936595599
+   ],
+   "player2": [
+    0.0,
+    0.0046364741429360395,
+    -0.0046364741429360395
+   ],
+   "max_gain": 0.0025500551388786125
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.03750000149011612,
+    -0.03750000149011612
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562479170774193
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.037500000000000006,
+    -0.037500000000000006
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478247101527
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.03750000149011612,
+    -0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.0018562478798440987
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.037500000000000006,
+    -0.037500000000000006
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.0018562478247101458
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.03750000149011612,
+    -0.03749999776482582
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.001856247797886651
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.037500000000000006,
+    -0.037500000000000006
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.0018562478247101943
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.07238052040338516,
+    -0.07238052040338516
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828201365646697
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.07238051269472122,
+    -0.0723805126947212
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828197365917053
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.053006116300821304,
+    -0.0530061200261116
+   ],
+   "player2": [
+    0.0,
+    0.004532024264335632,
+    -0.004532024264335632
+   ],
+   "max_gain": 0.002623796695562869
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.05300611527526146,
+    -0.05300611527526146
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.004532022856034865,
+    -0.004532022856034865
+   ],
+   "max_gain": 0.002623796562840508
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.05151637643575668,
+    -0.05151638388633728
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0046364739537239075,
+    -0.0046364739537239075
+   ],
+   "max_gain": 0.002550055185581747
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.05151637936595598,
+    -0.05151637936595599
+   ],
+   "player2": [
+    0.0,
+    0.0046364741429360395,
+    -0.0046364741429360395
+   ],
+   "max_gain": 0.0025500551388786125
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.07500000298023224,
+    -0.07500001043081284
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.003712482965023467
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.07500000000000001,
+    -0.07500000000000001
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825977541964
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.07500000298023224,
+    -0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.0037124827266391755
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.075,
+    -0.075
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.0037124825977541964
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.07500000298023224,
+    -0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.0037124827452892015
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.07500000000000001,
+    -0.07500000000000001
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.0037124825977542103
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.14476104080677032,
+    -0.14476104080677032
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0071655464056580576
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.14476102538944247,
+    -0.14476102538944247
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007165545624368795
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.10601222515106201,
+    -0.10601222515106201
+   ],
+   "player2": [
+    0.0,
+    0.009064042940735817,
+    -0.009064043872058392
+   ],
+   "max_gain": 0.00524755598050413
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.10601223055052292,
+    -0.10601223055052292
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.009064045712069702,
+    -0.009064045712069702
+   ],
+   "max_gain": 0.005247556266385199
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.10303276777267456,
+    -0.10303276777267456
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.009272949770092964,
+    -0.00927294883877039
+   ],
+   "max_gain": 0.0051000768776643945
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.10303275873191196,
+    -0.10303275873191196
+   ],
+   "player2": [
+    0.0,
+    0.009272948285872079,
+    -0.009272948285872079
+   ],
+   "max_gain": 0.00510007643969846
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.07500000298023224,
+    -0.07500001043081284
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.003712482965023467
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.07500000000000001,
+    -0.07500000000000001
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825977541964
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.07500000298023224,
+    -0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.0037124827266391755
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.075,
+    -0.075
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.0037124825977541964
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.07500000298023224,
+    -0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.0037124827452892015
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.07500000000000001,
+    -0.07500000000000001
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.0037124825977542103
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.14476104080677032,
+    -0.14476104080677032
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0071655464056580576
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.14476102538944247,
+    -0.14476102538944247
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007165545624368795
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    -0.10601222515106201,
+    -0.10601222515106201
+   ],
+   "player2": [
+    0.0,
+    0.009064042940735817,
+    -0.009064043872058392
+   ],
+   "max_gain": 0.00524755598050413
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -0.10601223055052292,
+    -0.10601223055052292
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.009064045712069702,
+    -0.009064045712069702
+   ],
+   "max_gain": 0.005247556266385199
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -0.10303276777267456,
+    -0.10303276777267456
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.009272949770092964,
+    -0.00927294883877039
+   ],
+   "max_gain": 0.0051000768776643945
+  },
+  {
+   "lam": -1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -0.10303275873191196,
+    -0.10303275873191196
+   ],
+   "player2": [
+    0.0,
+    0.009272948285872079,
+    -0.009272948285872079
+   ],
+   "max_gain": 0.00510007643969846
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 1.1642006803036509e-12
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    1.1641532182693481e-10,
+    0.0
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 1.4428121845478509e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 1.4428124876411652e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    -2.3283064365386963e-10
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 1.5187501297433958e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -4.336808689942018e-19,
+    -4.336808689942018e-19
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 1.5187499855846658e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -4.656612873077393e-10,
+    4.656612873077393e-10
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 2.095462692253136e-12
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    4.656612873077393e-10
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.007070053368806839,
+    -0.007070053368806839
+   ],
+   "max_gain": 3.181524349135222e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.007070053378490301,
+    -0.007070053378490301
+   ],
+   "max_gain": 3.1815238877943176e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    1.862645149230957e-09,
+    0.007120922207832336,
+    -0.007120922207832336
+   ],
+   "max_gain": 3.2044157894428604e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    1.3010426069826053e-18,
+    -8.673617379884035e-19
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.007120920648343888,
+    -0.007120920648343888
+   ],
+   "max_gain": 3.204414156348593e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 1.1642006803036509e-12
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    1.1641532182693481e-10,
+    0.0
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 1.4428121845478509e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 1.4428124876411652e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    -2.3283064365386963e-10
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 1.5187501297433958e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -4.336808689942018e-19,
+    -4.336808689942018e-19
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 1.5187499855846658e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -4.656612873077393e-10,
+    4.656612873077393e-10
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 2.095462692253136e-12
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    4.656612873077393e-10
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.007070053368806839,
+    -0.007070053368806839
+   ],
+   "max_gain": 3.181524349135222e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.007070053378490301,
+    -0.007070053378490301
+   ],
+   "max_gain": 3.1815238877943176e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    1.862645149230957e-09,
+    0.007120922207832336,
+    -0.007120922207832336
+   ],
+   "max_gain": 3.2044157894428604e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    1.3010426069826053e-18,
+    -8.673617379884035e-19
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.007120920648343888,
+    -0.007120920648343888
+   ],
+   "max_gain": 3.204414156348593e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -4.656612873077393e-10,
+    -2.3283064365386963e-10
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 1.792799242394949e-11
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    4.336808689942018e-19,
+    -4.336808689942018e-19
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    1.1641532182693481e-10,
+    2.3283064365386963e-10
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 2.885626180875768e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -8.673617379884035e-19,
+    4.336808689942018e-19
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 2.8856249011171772e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -1.1641532182693481e-10,
+    -2.3283064365386963e-10
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 3.037500172997209e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -2.168404344971009e-19,
+    0.0
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 3.0374998846693837e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -8.673617379884035e-19,
+    -2.6020852139652106e-18
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    4.656612873077393e-10
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.014140110462903976,
+    -0.014140108600258827
+   ],
+   "max_gain": 6.363048694742234e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -8.673617379884035e-19,
+    8.673617379884035e-19
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.014140106756980617,
+    -0.014140106756980613
+   ],
+   "max_gain": 6.363046980437624e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -4.656612873077393e-10,
+    9.313225746154785e-10
+   ],
+   "player2": [
+    1.862645149230957e-09,
+    0.014241836965084076,
+    -0.014241835102438927
+   ],
+   "max_gain": 6.408826063489768e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    8.673617379884035e-19,
+    -2.6020852139652106e-18
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.01424184129668777,
+    -0.01424184129668777
+   ],
+   "max_gain": 6.408827500257487e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    -4.656612873077393e-10,
+    -2.3283064365386963e-10
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 1.792799242394949e-11
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    4.336808689942018e-19,
+    -4.336808689942018e-19
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    1.1641532182693481e-10,
+    2.3283064365386963e-10
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 2.885626180875768e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -8.673617379884035e-19,
+    4.336808689942018e-19
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 2.8856249011171772e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -1.1641532182693481e-10,
+    -2.3283064365386963e-10
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 3.037500172997209e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    -2.168404344971009e-19,
+    0.0
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 3.0374998846693837e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    0.0
+   ],
+   "player2": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    -8.673617379884035e-19,
+    -2.6020852139652106e-18
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 3.469446951953614e-18
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.0,
+    4.656612873077393e-10
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.014140110462903976,
+    -0.014140108600258827
+   ],
+   "max_gain": 6.363048694742234e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    -8.673617379884035e-19,
+    8.673617379884035e-19
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.014140106756980617,
+    -0.014140106756980613
+   ],
+   "max_gain": 6.363046980437624e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    -4.656612873077393e-10,
+    9.313225746154785e-10
+   ],
+   "player2": [
+    1.862645149230957e-09,
+    0.014241836965084076,
+    -0.014241835102438927
+   ],
+   "max_gain": 6.408826063489768e-05
+  },
+  {
+   "lam": 0.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    8.673617379884035e-19,
+    -2.6020852139652106e-18
+   ],
+   "player2": [
+    3.469446951953614e-18,
+    0.01424184129668777,
+    -0.01424184129668777
+   ],
+   "max_gain": 6.408827500257487e-05
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.01875000260770321,
+    0.01875000074505806
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0009281248199266359
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.01875,
+    0.018750000000000003
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0009281247280885571
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.01875000074505806,
+    0.01875000074505806
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.0009281247696254838
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.018750000000000003,
+    0.01875
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.0009281247280886057
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.01875000074505806,
+    0.01875000260770321
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.0009281248022210212
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.01875,
+    0.01875
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.0009281247280885641
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.057231105864048004,
+    0.057231102138757706
+   ],
+   "player2": [
+    4.656612873077393e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.002832931951849381
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05723110265140431,
+    0.05723110265140431
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.002832931848763473
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.03626767545938492,
+    0.03626767545938492
+   ],
+   "player2": [
+    -1.862645149230957e-09,
+    0.0062017738819122314,
+    -0.0062017738819122314
+   ],
+   "max_gain": 0.0017952479466296148
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.03626767182518899,
+    0.03626767182518898
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.0062017718821073195,
+    -0.0062017718821073195
+   ],
+   "max_gain": 0.0017952477875403869
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.034887127578258514,
+    0.034887127578258514
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0062796808779239655,
+    -0.0062796808779239655
+   ],
+   "max_gain": 0.0017269110776308508
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0348871198307756,
+    0.0348871198307756
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006279681569539612,
+    -0.006279681569539612
+   ],
+   "max_gain": 0.0017269106800885253
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.01875000260770321,
+    0.01875000074505806
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0009281248199266359
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.01875,
+    0.018750000000000003
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0009281247280885571
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.01875000074505806,
+    0.01875000074505806
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.0009281247696254838
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.018750000000000003,
+    0.01875
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.0009281247280886057
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.01875000074505806,
+    0.01875000260770321
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.0009281248022210212
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.01875,
+    0.01875
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.0009281247280885641
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.057231105864048004,
+    0.057231102138757706
+   ],
+   "player2": [
+    4.656612873077393e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.002832931951849381
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05723110265140431,
+    0.05723110265140431
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.002832931848763473
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.03626767545938492,
+    0.03626767545938492
+   ],
+   "player2": [
+    -1.862645149230957e-09,
+    0.0062017738819122314,
+    -0.0062017738819122314
+   ],
+   "max_gain": 0.0017952479466296148
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.03626767182518899,
+    0.03626767182518898
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.0062017718821073195,
+    -0.0062017718821073195
+   ],
+   "max_gain": 0.0017952477875403869
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.034887127578258514,
+    0.034887127578258514
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0062796808779239655,
+    -0.0062796808779239655
+   ],
+   "max_gain": 0.0017269110776308508
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0348871198307756,
+    0.0348871198307756
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006279681569539612,
+    -0.006279681569539612
+   ],
+   "max_gain": 0.0017269106800885253
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.001856247903146771
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.037500000000000006,
+    0.0375
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478247101805
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000521540642,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.0018562480037162474
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0375,
+    0.0375
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.0018562478247101319
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.00185624789380609
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.037500000000000006,
+    0.037500000000000006
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.0018562478247101735
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.1144622191786766,
+    0.1144622191786766
+   ],
+   "player2": [
+    4.656612873077393e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005665818017900219
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.11446220530280862,
+    0.11446220530280862
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005665817303247611
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.07253535091876984,
+    0.07253535091876984
+   ],
+   "player2": [
+    -1.862645149230957e-09,
+    0.012403544038534164,
+    -0.012403545901179314
+   ],
+   "max_gain": 0.0035904841074176352
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.07253534365037796,
+    0.07253534365037796
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.012403543764214625,
+    -0.012403543764214629
+   ],
+   "max_gain": 0.0035904837683029545
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.06977425515651703,
+    0.06977425515651703
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.012559369206428528,
+    -0.012559369206428528
+   ],
+   "max_gain": 0.0034538116321270323
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0697742396615512,
+    0.0697742396615512
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.01255936313907921,
+    -0.012559363139079214
+   ],
+   "max_gain": 0.0034538108510193608
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.001856247903146771
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.037500000000000006,
+    0.0375
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478247101805
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000521540642,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.0018562480037162474
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0375,
+    0.0375
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.0018562478247101319
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.00185624789380609
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.037500000000000006,
+    0.037500000000000006
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.0018562478247101735
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.1144622191786766,
+    0.1144622191786766
+   ],
+   "player2": [
+    4.656612873077393e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005665818017900219
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.11446220530280862,
+    0.11446220530280862
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005665817303247611
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.07253535091876984,
+    0.07253535091876984
+   ],
+   "player2": [
+    -1.862645149230957e-09,
+    0.012403544038534164,
+    -0.012403545901179314
+   ],
+   "max_gain": 0.0035904841074176352
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.07253534365037796,
+    0.07253534365037796
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.012403543764214625,
+    -0.012403543764214629
+   ],
+   "max_gain": 0.0035904837683029545
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.06977425515651703,
+    0.06977425515651703
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.012559369206428528,
+    -0.012559369206428528
+   ],
+   "max_gain": 0.0034538116321270323
+  },
+  {
+   "lam": 0.5,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0697742396615512,
+    0.0697742396615512
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.01255936313907921,
+    -0.012559363139079214
+   ],
+   "max_gain": 0.0034538108510193608
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478891769388
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0375,
+    0.037500000000000006
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478247101805
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.001856247907783777
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0375,
+    0.037500000000000006
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.0018562478247101388
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.001856247898470477
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.037500000000000006,
+    0.037500000000000006
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.0018562478247101874
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07238052785396576,
+    0.07238052785396576
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828204871919886
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07238051269472119,
+    0.07238051269472118
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828197365916914
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.0530061200261116,
+    0.053006116300821304
+   ],
+   "player2": [
+    0.0,
+    0.004532024264335632,
+    -0.004532024264335632
+   ],
+   "max_gain": 0.0026237967095326872
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.053006115275261445,
+    0.053006115275261445
+   ],
+   "player2": [
+    1.734723475976807e-18,
+    0.004532022856034865,
+    -0.004532022856034865
+   ],
+   "max_gain": 0.0026237965628405496
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.05151638388633728,
+    0.05151638016104698
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0046364739537239075,
+    -0.0046364739537239075
+   ],
+   "max_gain": 0.002550055297553623
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05151637936595598,
+    0.05151637936595599
+   ],
+   "player2": [
+    0.0,
+    0.0046364741429360395,
+    -0.0046364741429360395
+   ],
+   "max_gain": 0.0025500551388784112
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478891769388
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.0375,
+    0.037500000000000006
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0018562478247101805
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.001856247907783777
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.0375,
+    0.037500000000000006
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.0018562478247101388
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.03750000149011612,
+    0.03750000149011612
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.001856247898470477
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.037500000000000006,
+    0.037500000000000006
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.0018562478247101874
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07238052785396576,
+    0.07238052785396576
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828204871919886
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07238051269472119,
+    0.07238051269472118
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0035828197365916914
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.0530061200261116,
+    0.053006116300821304
+   ],
+   "player2": [
+    0.0,
+    0.004532024264335632,
+    -0.004532024264335632
+   ],
+   "max_gain": 0.0026237967095326872
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.053006115275261445,
+    0.053006115275261445
+   ],
+   "player2": [
+    1.734723475976807e-18,
+    0.004532022856034865,
+    -0.004532022856034865
+   ],
+   "max_gain": 0.0026237965628405496
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.05151638388633728,
+    0.05151638016104698
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0046364739537239075,
+    -0.0046364739537239075
+   ],
+   "max_gain": 0.002550055297553623
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05151637936595598,
+    0.05151637936595599
+   ],
+   "player2": [
+    0.0,
+    0.0046364741429360395,
+    -0.0046364741429360395
+   ],
+   "max_gain": 0.0025500551388784112
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07500001043081284
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124829036353987
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.07500000000000001
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825977540576
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.07499999552965164,
+    0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.0037124825534264744
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.075
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.003712482597754016
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07499999552965164
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.0037124825776278236
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.075
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.00371248259775403
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.14476105570793152,
+    0.14476104080677032
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007165546790251942
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.14476102538944235,
+    0.14476102538944238
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007165545624368878
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.10601223260164261,
+    0.10601223260164261
+   ],
+   "player2": [
+    0.0,
+    0.009064042940735817,
+    -0.009064043872058392
+   ],
+   "max_gain": 0.0052475563632451705
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.10601223055052288,
+    0.10601223055052288
+   ],
+   "player2": [
+    1.734723475976807e-18,
+    0.009064045712069702,
+    -0.009064045712069702
+   ],
+   "max_gain": 0.005247556266385192
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.10303276032209396,
+    0.10303276032209396
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.009272949770092964,
+    -0.00927294883877039
+   ],
+   "max_gain": 0.005100076537263382
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.10303275873191196,
+    0.10303275873191195
+   ],
+   "player2": [
+    0.0,
+    0.009272948285872079,
+    -0.009272948285872079
+   ],
+   "max_gain": 0.005100076439698349
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07500001043081284
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124829036353987
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.07500000000000001
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825977540576
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.07499999552965164,
+    0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.0037124825534264744
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.075
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.003712482597754016
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07499999552965164
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.0037124825776278236
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.075
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.00371248259775403
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.14476105570793152,
+    0.14476104080677032
+   ],
+   "player2": [
+    -1.3969838619232178e-09,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007165546790251942
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.14476102538944235,
+    0.14476102538944238
+   ],
+   "player2": [
+    -2.6020852139652106e-18,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007165545624368878
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.10601223260164261,
+    0.10601223260164261
+   ],
+   "player2": [
+    0.0,
+    0.009064042940735817,
+    -0.009064043872058392
+   ],
+   "max_gain": 0.0052475563632451705
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.10601223055052288,
+    0.10601223055052288
+   ],
+   "player2": [
+    1.734723475976807e-18,
+    0.009064045712069702,
+    -0.009064045712069702
+   ],
+   "max_gain": 0.005247556266385192
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.10303276032209396,
+    0.10303276032209396
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.009272949770092964,
+    -0.00927294883877039
+   ],
+   "max_gain": 0.005100076537263382
+  },
+  {
+   "lam": 1.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.10303275873191196,
+    0.10303275873191195
+   ],
+   "player2": [
+    0.0,
+    0.009272948285872079,
+    -0.009272948285872079
+   ],
+   "max_gain": 0.005100076439698349
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07499999552965164,
+    0.07500000298023224
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825255236485
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.075,
+    0.07500000000000001
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825977540576
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.003712482763900092
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.075
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.003712482597754037
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.0037124827080207146
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.07500000000000001
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.00371248259775403
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0585937537252903,
+    0.0585937537252903
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.002900382530093802
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05859374896419908,
+    0.058593748964199076
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0029003822756726166
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.05104227364063263,
+    0.05104227364063263
+   ],
+   "player2": [
+    9.313225746154785e-10,
+    0.0021820589900016785,
+    -0.0021820589900016785
+   ],
+   "max_gain": 0.002526587059646916
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.05104227266042542,
+    0.051042272660425415
+   ],
+   "player2": [
+    0.0,
+    0.0021820571562331872,
+    -0.0021820571562331872
+   ],
+   "max_gain": 0.0025265870112340383
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.05034136027097702,
+    0.05034136399626732
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0022653602063655853,
+    -0.0022653602063655853
+   ],
+   "max_gain": 0.0024918921454555043
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05034136155622603,
+    0.050341361556226025
+   ],
+   "player2": [
+    0.0,
+    0.002265361270030169,
+    -0.002265361270030169
+   ],
+   "max_gain": 0.0024918921344651984
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07499999552965164,
+    0.07500000298023224
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825255236485
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.075,
+    0.07500000000000001
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0037124825977540576
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.003206249326467514,
+    -0.003206249326467514
+   ],
+   "max_gain": 0.003712482763900092
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.075
+   ],
+   "player2": [
+    0.0,
+    0.0032062500000000008,
+    -0.0032062500000000008
+   ],
+   "max_gain": 0.003712482597754037
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.07500000298023224,
+    0.07500000298023224
+   ],
+   "player2": [
+    0.0,
+    0.0033750003203749657,
+    -0.0033750003203749657
+   ],
+   "max_gain": 0.0037124827080207146
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.07500000000000001,
+    0.07500000000000001
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.003374999999999996,
+    -0.003374999999999996
+   ],
+   "max_gain": 0.00371248259775403
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.0585937537252903,
+    0.0585937537252903
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.002900382530093802
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05859374896419908,
+    0.058593748964199076
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0029003822756726166
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.05104227364063263,
+    0.05104227364063263
+   ],
+   "player2": [
+    9.313225746154785e-10,
+    0.0021820589900016785,
+    -0.0021820589900016785
+   ],
+   "max_gain": 0.002526587059646916
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.05104227266042542,
+    0.051042272660425415
+   ],
+   "player2": [
+    0.0,
+    0.0021820571562331872,
+    -0.0021820571562331872
+   ],
+   "max_gain": 0.0025265870112340383
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.05034136027097702,
+    0.05034136399626732
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0022653602063655853,
+    -0.0022653602063655853
+   ],
+   "max_gain": 0.0024918921454555043
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "integrated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.05034136155622603,
+    0.050341361556226025
+   ],
+   "player2": [
+    0.0,
+    0.002265361270030169,
+    -0.002265361270030169
+   ],
+   "max_gain": 0.0024918921344651984
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.15000000596046448,
+    0.14999999105930328
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0074248607256035895
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.15000000000000002,
+    0.15000000000000002
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007424860784382252
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.15000000596046448,
+    0.15000000596046448
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.007424861098050892
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.15000000000000002,
+    0.15000000000000002
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.007424860784382238
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.15000000596046448,
+    0.15000002086162567
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.00742486137737023
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.15,
+    0.15
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.007424860784382245
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.1171875074505806,
+    0.11718752235174179
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005800715589166221
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.11718749792839817,
+    0.11718749792839817
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005800714763697701
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.10208454728126526,
+    0.10208455473184586
+   ],
+   "player2": [
+    9.313225746154785e-10,
+    0.004364116117358208,
+    -0.004364115186035633
+   ],
+   "max_gain": 0.005053141374532298
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.10208454532085086,
+    0.10208454532085084
+   ],
+   "player2": [
+    0.0,
+    0.0043641143124663745,
+    -0.004364114312466373
+   ],
+   "max_gain": 0.005053141110067369
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.10068272054195404,
+    0.10068272054195404
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.004530724138021469,
+    -0.004530725069344044
+   ],
+   "max_gain": 0.004983752557492713
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": false,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.10068272311245206,
+    0.10068272311245205
+   ],
+   "player2": [
+    0.0,
+    0.004530722540060345,
+    -0.004530722540060345
+   ],
+   "max_gain": 0.004983752693842193
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.15000000596046448,
+    0.14999999105930328
+   ],
+   "player2": [
+    -2.3283064365386963e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.0074248607256035895
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.15000000000000002,
+    0.15000000000000002
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.007424860784382252
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.15000000596046448,
+    0.15000000596046448
+   ],
+   "player2": [
+    0.0,
+    0.006412503309547901,
+    -0.0064125023782253265
+   ],
+   "max_gain": 0.007424861098050892
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.15000000000000002,
+    0.15000000000000002
+   ],
+   "player2": [
+    0.0,
+    0.006412500000000003,
+    -0.0064125000000000015
+   ],
+   "max_gain": 0.007424860784382238
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.15000000596046448,
+    0.15000002086162567
+   ],
+   "player2": [
+    0.0,
+    0.006749999709427357,
+    -0.006750001572072506
+   ],
+   "max_gain": 0.00742486137737023
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": false,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.15,
+    0.15
+   ],
+   "player2": [
+    -1.734723475976807e-18,
+    0.006749999999999997,
+    -0.006749999999999999
+   ],
+   "max_gain": 0.007424860784382245
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float32",
+   "terminal": [
+    0.1171875074505806,
+    0.11718752235174179
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005800715589166221
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.0,
+   "dtype": "float64",
+   "terminal": [
+    0.11718749792839817,
+    0.11718749792839817
+   ],
+   "player2": [
+    -4.336808689942018e-19,
+    0.0,
+    0.0
+   ],
+   "max_gain": 0.005800714763697701
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float32",
+   "terminal": [
+    0.10208454728126526,
+    0.10208455473184586
+   ],
+   "player2": [
+    9.313225746154785e-10,
+    0.004364116117358208,
+    -0.004364115186035633
+   ],
+   "max_gain": 0.005053141374532298
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 0.95,
+   "dtype": "float64",
+   "terminal": [
+    0.10208454532085086,
+    0.10208454532085084
+   ],
+   "player2": [
+    0.0,
+    0.0043641143124663745,
+    -0.004364114312466373
+   ],
+   "max_gain": 0.005053141110067369
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float32",
+   "terminal": [
+    0.10068272054195404,
+    0.10068272054195404
+   ],
+   "player2": [
+    -9.313225746154785e-10,
+    0.004530724138021469,
+    -0.004530725069344044
+   ],
+   "max_gain": 0.004983752557492713
+  },
+  {
+   "lam": 2.0,
+   "loss_mode": "separated_aa",
+   "proximal": true,
+   "normalize": true,
+   "lmbda": 1.0,
+   "dtype": "float64",
+   "terminal": [
+    0.10068272311245206,
+    0.10068272311245205
+   ],
+   "player2": [
+    0.0,
+    0.004530722540060345,
+    -0.004530722540060345
+   ],
+   "max_gain": 0.004983752693842193
+  }
+ ],
+ "upstream_commit": "2065e43c0c36694965cf4476dc692512e3892dcc",
+ "upstream_source_sha256": {
+  "train.py": "995b645c05103957855abfe1420e80cb0ac5e3f24ed9ee399081578019348c61",
+  "utils.py": "7f0e0e019e4b47aa9c7077676bb1ae950fb69d1c4a3cf06c291f5664e0657f66"
+ },
+ "upstream_function_segments": {
+  "compute_gae_advantages": {
+   "source_file": "utils.py",
+   "line": 139,
+   "end_line": 152,
+   "sha256_source_segment": "adef9d299c8380f8e81c91881e03255812792af22313c6b7d68b4ba8df23f7e4"
+  },
+  "aa_terms": {
+   "source_file": "train.py",
+   "line": 1018,
+   "end_line": 1037,
+   "sha256_source_segment": "b85f7ea17d9dca9bd9910d3f2716def9e56b0fe3051973788d99bdc53b748ab2"
+  },
+  "aa_loss": {
+   "source_file": "train.py",
+   "line": 1039,
+   "end_line": 1069,
+   "sha256_source_segment": "b43b799ca38f605a9337b3a56151120c89a2ac363197697eeda67afb01452f75"
+  },
+  "actor_losses": {
+   "source_file": "train.py",
+   "line": 1071,
+   "end_line": 1151,
+   "sha256_source_segment": "e1499324de5ec1b49fa01e2b07794c8773d9dcac056d9eb36db1a2c96f2fbc98"
+  }
+ },
+ "seconds": 2.1123156547546387,
+ "scope": "Unmodified upstream loss/advantage helper bodies on a tabular exact-critic fixture; not the authors networks or benchmarks"
+}
