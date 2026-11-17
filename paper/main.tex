@@ -15,14 +15,14 @@
 
 \title{Advantage Alignment Does Not Preserve Mixed Nash Equilibria:\\
 A Machine-Checked Counterexample and an Exact Covariance Characterization}
-\author{GalexY3\\ \small \url{https://github.com/GalexY3}}
+\author{Alejandro Panera Pascual (GalexY)\\ \small Universidad de Salamanca, Spain\\ \small \url{https://github.com/GalexY3}}
 \date{November 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Advantage Alignment (Duque et al., ICLR 2025) is a scalable opponent-shaping method whose Theorem~3 states that the alignment term vanishes at every Nash equilibrium, so that the update preserves Nash equilibria. We show that this is false for mixed equilibria and identify exactly when it fails. First, we give a two-player, two-stage, fully observed game with an isolated, completely mixed Markov-perfect equilibrium at which the alignment field equals $(0,\beta\gamma^3/4,\beta\gamma^3/4)$ for one player. After one ascent step the other player has a strictly profitable unilateral deviation worth $\gamma(1+c)\tanh(\alpha\beta\gamma^3/8)>0$. Second, we prove that, at any state and for any pre-action weight $W$, the alignment term equals $W$ times the covariance, under the agent's own policy, between its score and the \emph{externality} of its action on the opponent's expected advantage. Nash indifference constrains each player's own-action marginal advantage, not this covariance. The term therefore vanishes at an interior equilibrium if and only if the agent's action carries no such externality, which fails generically in social dilemmas. The same identity explains why the original argument does hold for pure-strategy profiles. Third, we analyse two repairs. Marginalizing the opponent's current advantage removes the alignment term for every policy and reduces the method to naive policy gradient. Averaging the agent's past advantage over the opponent's action, as suggested by the original authors, restores preservation at completely mixed Markov-perfect equilibria but can remove the alignment signal on entire families of profiles. All main statements are verified in Lean~4 with Mathlib, with no unproved steps and no axioms beyond Lean's three standard ones.
+Advantage Alignment (Duque et al., ICLR 2025) is a scalable opponent-shaping method whose Theorem~3 states that the alignment term vanishes at every Nash equilibrium, so that the update preserves Nash equilibria. We construct a two-player, two-stage, fully observed game whose unique Markov-perfect equilibrium is completely mixed. At that equilibrium the alignment field equals $(0,\beta\gamma^3/4,\beta\gamma^3/4)$ for one player. After one ascent step the other player has a strictly profitable unilateral deviation worth $\gamma(1+c)\tanh(\alpha\beta\gamma^3/8)>0$. We then prove that, at any state and for any pre-action weight $W$, the alignment term equals $W$ times the covariance, under the agent's own policy, between its score and the \emph{externality} of its action on the opponent's expected advantage. Nash indifference constrains each player's own-action marginal advantage, not this covariance. We derive the signed state weights that aggregate these conditional terms. Even with fixed local externalities, varying the information carried by the next state can cancel or reverse the update. Moreover, the update is not invariant to strategic equivalence: adding to one player's reward a term that depends only on the opponent's action leaves every unilateral deviation gain and the equilibrium unchanged, yet switches the equilibrium update on or off. Our counterexample is driven entirely by such a component. The same identity explains why the original argument does hold for pure-strategy profiles. We analyse two repairs. Marginalizing the opponent's current advantage removes the alignment term for every policy and reduces the method to naive policy gradient. Averaging the agent's past advantage over the opponent's action, as suggested by the original authors, restores preservation at completely mixed Markov-perfect equilibria but can remove the alignment signal on entire families of profiles. The equilibrium witness, its update and profitable deviation, the conditional covariance identity and the failure of invariance under strategic equivalence have machine-checked proofs in Lean~4 with Mathlib. The state aggregation and the memory control are derived analytically and checked with exact arithmetic.
 \end{abstract}
 
 \section{Introduction}
@@ -32,7 +32,7 @@ Opponent shaping methods modify an agent's learning update to account for how ot
 Theorem~3 of \cite{duque2025aa} states that AA \emph{preserves Nash equilibria}: if the joint policy is a Nash equilibrium, ``the gradient contribution of the advantage alignment term is zero''. Its proof (Appendix A.8) relies on a lemma that advantages vanish at Nash for actions in the support. That lemma holds for each player's advantage \emph{averaged over the other player's action}. The alignment term in Equation~8, however, multiplies \emph{joint-action} advantages, which need not vanish at a mixed equilibrium.
 
 \paragraph{Contributions.}
-(i) An exact, isolated counterexample in which the AA update moves a mixed Markov-perfect equilibrium to a profile with a profitable deviation (Section~\ref{sec:counter}). (ii) An exact characterization of the alignment term as a covariance between the agent's score and the externality of its action on the opponent's advantage, with an if-and-only-if condition for vanishing at equilibrium and a corollary covering pure profiles (Section~\ref{sec:cov}). (iii) An analysis of two repairs (Section~\ref{sec:repair}). (iv) A Lean~4/Mathlib formalization of all main statements (Section~\ref{sec:lean}).
+(i) An exact counterexample in which the AA update moves the unique, completely mixed Markov-perfect equilibrium of a two-stage game to a profile with a profitable deviation (Section~\ref{sec:counter}). (ii) An exact characterization of the alignment term as a covariance between the agent's score and the externality of its action on the opponent's advantage, with an if-and-only-if condition for vanishing at equilibrium and a corollary covering pure profiles (Section~\ref{sec:cov}). (iii) The aggregation of these conditional terms over histories and two controls showing that the equilibrium update depends on how past experience reaches the current state and on payoff components that are irrelevant to unilateral incentives, so AA is not invariant to strategic equivalence (Sections~\ref{sec:cov} and~\ref{sec:counter}). (iv) An analysis of two repairs (Section~\ref{sec:repair}). (v) A Lean~4/Mathlib formalization of the main statements (Section~\ref{sec:lean}).
 
 \paragraph{Context.} The first author of \cite{duque2025aa} publicly confirmed, in response to a question about this counterexample in the method's code repository, that Theorem~3 ``is too broad as stated'' and covers pure-strategy equilibria but not mixed equilibria in general, and suggested the second repair studied here \cite{duque2026issue}. The characterization, the analysis of both repairs and the machine-checked proofs are new to this note. We found no prior correction of Theorem~3 in the arXiv versions of \cite{duque2025aa}, in the titles of the works citing it indexed by OpenAlex, or in \cite{piche2026thesis}. The latter derives a related alignment term for a Stackelberg leader facing a soft best response, with past advantages marginalized over the agent's own action, and does not address Nash preservation.
 
@@ -60,16 +60,31 @@ $W\sum_a\pi_1(a\mid s)S^1(a)\mu_2(s,a)$. The score identity
 $\sum_a\pi_1(a\mid s)S^1(a)=0$ lets us subtract any constant from $\mu_2$, in particular its mean.
 \end{proof}
 
-The function $a\mapsto\mu_2(s,a)-\E_a\mu_2(s,a)$ measures how player~1's current action changes player~2's expected advantage: an externality. The alignment term pushes player~1 towards actions that benefit player~2 in this sense, which is the intended mechanism of AA.
+The function $a\mapsto\mu_2(s,a)-\E_a\mu_2(s,a)$ measures how player~1's current action changes player~2's expected advantage: an externality. The sign of $W$ determines whether the conditional term favors or discourages such actions.
 
 \begin{corollary}[When the term vanishes]\label{cor:iff}
 If $W\neq 0$, the conditional alignment term is zero if and only if the covariance in Proposition~\ref{prop:cov} is zero.
 \end{corollary}
 
-At a completely mixed equilibrium, Nash indifference states that $\E_{a\sim\pi_1}A_2(s,a,b)=0$ for every $b$ in the support of $\pi_2$. That is player~2's own-action marginal. It places no restriction on $\mu_2(s,\cdot)$, which averages over $b$ instead. Whenever player~1's action affects player~2's payoff at an interior equilibrium, as it does by definition in a social dilemma, the covariance is generically nonzero, and the AA field does not vanish.
+At a completely mixed equilibrium, Nash indifference states that $\E_{a\sim\pi_1}A_2(s,a,b)=0$ for every $b$ in the support of $\pi_2$. That is player~2's own-action marginal. It places no restriction on $\mu_2(s,\cdot)$, which averages over $b$ instead. For independent tabular softmax logits, the coordinate for action $a$ in the covariance is $\pi_1(a\mid s)[\mu_2(s,a)-\E_a\mu_2(s,a)]$. At a fixed history with $W\ne0$, constancy of $\mu_2$ on the support is thus necessary and sufficient for vanishing in this parameterization. With restricted parameterizations only its projection on the available score directions is observable.
+
+\begin{proposition}[Aggregation over histories]\label{prop:aggregate}
+In a finite stationary Markov game with bounded rewards, write $P$ for the on-policy state transition matrix, $u$ for the initial row distribution, and $C(s)$ for the score covariance in Proposition~\ref{prop:cov}. Define
+\[
+ M(s,j)=\E_{a,b\mid s}[A_1(s,a,b)\Pr(s_{t+1}=j\mid s,a,b)] .
+\]
+The full alignment term in Equation~\eqref{eq:aa} is $\beta\gamma\sum_s v(s)C(s)$, where
+\[
+ d=u(I-\gamma P)^{-1},\qquad v=\gamma^2 dM(I-\gamma^2P)^{-1}.
+\]
+\end{proposition}
+\begin{proof}
+Let $p_t(s)=\Pr(s_t=s)$ and $r_t(s)=\E[W_t\,\mathbf{1}_{s_t=s}]$. The recursion $W_{t+1}=\gamma(W_t+A_{1,t})$ gives $r_{t+1}=\gamma(r_tP+p_tM)$ with $r_0=0$. Summing the bounded discounted series gives $d=\sum_t\gamma^tp_t$ and $v=\sum_t\gamma^tr_t=\gamma^2(vP+dM)$. Applying Proposition~\ref{prop:cov} at each history yields the claimed expression.
+\end{proof}
+For disjoint tabular logit blocks and $\beta>0$, the full field of alignment vanishes exactly when each state has either zero signed weight $v(s)$ or constant $\mu_2(s,\cdot)$ on its support. Shared parameters permit further cancellations between states. If transitions are action-independent on the policy's Markov state space, $M=0$ by centering of the exact advantages. This also explains why an externality at a single stage alone cannot establish a nonzero update.
 
 \begin{corollary}[Pure profiles]\label{cor:pure}
-If $\pi_1(\cdot\mid s)$ is a point mass, the covariance is zero for every opponent advantage. Hence the alignment term vanishes at pure profiles, consistently with the scope stated in \cite{duque2026issue}.
+For a score defined on the sampled support, if $\pi_1(\cdot\mid s)$ is a point mass, the covariance is zero for every opponent advantage. Hence the alignment term vanishes at pure profiles, consistently with the scope stated in \cite{duque2026issue}. This is a boundary statement; finite softmax logits realize only interior policies.
 \end{corollary}
 
 \section{A counterexample}\label{sec:counter}
@@ -85,8 +100,13 @@ Stage & Player 1 & Player 2\\\midrule
 Each player has three Bernoulli logits (start, state $+1$, state $-1$). Let $\pi^*$ be the uniform profile (all logits zero).
 
 \begin{proposition}\label{prop:nash}
-$\pi^*$ is a Markov-perfect equilibrium. All state values are zero, exact joint advantages equal the stage rewards, and no deterministic history-dependent unilateral deviation yields a positive return. The equilibrium is isolated among Markov-perfect profiles: the Jacobian of the six indifference conditions has determinant $4096c^6$ at $\pi^*$.
+$\pi^*$ is a Markov-perfect equilibrium. All state values are zero, exact joint advantages equal the stage rewards, and no deterministic history-dependent unilateral deviation yields a positive return. It is the unique Markov-perfect equilibrium.
 \end{proposition}
+
+\begin{proof}
+At either terminal state let $m_f=\E f$ and $m_g=\E g$. The payoff gains from choosing $+1$ instead of $-1$ are $2c m_g$ for player~1 and $-2c m_f$ for player~2. If $m_g>0$, player~1 strictly chooses $+1$ and player~2 then strictly chooses $-1$, a contradiction. The case $m_g<0$ reverses the signs. Thus $m_g=0$, and mixing by player~2 requires $m_f=0$. The terminal values are consequently zero. At the start the gains have the identical form $2c\,\E z$ and $-2c\,\E x$, forcing both means to zero again. Backward induction gives the unique Markov-perfect equilibrium. Against the uniform opponent, either player's conditional expected terminal reward is zero for each own action, even given the past. At the first stage the same statement holds after including continuation value. Hence even a history-dependent deviation cannot improve the return.
+\end{proof}
+This profile also satisfies the Boltzmann action-value relation used in deriving AA: each player's marginal action values coincide state by state.
 
 \begin{proposition}\label{prop:field}
 At $\pi^*$ the AA direction of Equation~\eqref{eq:aa}, including the ordinary policy gradient, is $F_1=(0,\beta\gamma^3/4,\beta\gamma^3/4)$ and $F_2=(0,0,0)$.
@@ -104,6 +124,11 @@ Hence $\theta'$ is not a Nash equilibrium.
 \end{proposition}
 
 For $\gamma=0.9$, $\beta=0.3$, $\alpha=0.1$ and $c=0.1$, each nonzero field component is $0.054675$ and the deviation gain is $\approx 0.0027064$. The update does not move within a set of equilibria: it creates exploitability. In the notation of Proposition~\ref{prop:cov}, player~1's terminal action shifts player~2's advantage by $f\,z$, which covaries with player~1's score.
+
+\subsection{Two controls that separate dynamics from incentives}
+First replace the transition $s=z$ by $\Pr(s\mid z)=(1+\eta s z)/2$ with $\eta\in[-1,1]$, retaining the terminal payoff $f(s-cg)$. Terminal best-response differences and continuation values at the uniform profile are unchanged, so the preceding backward induction still applies. At either terminal state $C(s)=s/2$ in its logit coordinate, whereas $\E[A_{1,0}\mathbf{1}_{s_1=s}]=\eta s/2$. The two terminal field coordinates are now $\beta\gamma^3\eta/4$. Forgetting the initial choice ($\eta=0$) cancels the update; reversing its encoding while keeping the reward table fixed ($\eta=-1$) reverses its direction. This intervention changes the physical link between the initial choice and the subsequent payoff.
+
+Second, return to $s=z$ and replace player~1's initial payment by $cxz+\lambda z$ for $\lambda\in\mathbb{R}$. At a fixed opponent strategy, the change from $\lambda=0$ adds $\lambda\E z$ to the player's return for \emph{every} own strategy. All unilateral deviation gains and equilibrium sets therefore coincide across the family. This is a nonstrategic component in the strategic-form sense of \cite{candogan2011}. Nevertheless, the two terminal AA coordinates at the uniform equilibrium become $\beta\gamma^3\lambda/4$, by the same trajectory calculation as in Proposition~\ref{prop:field}. By contrast, merely delaying $\lambda z$ to a terminal payment of $\lambda z/\gamma$ preserves discounted trajectory returns and all exact joint advantages: at the terminal state it adds a state-dependent constant to both $Q_1$ and $V_1$. These controls separate sensitivity to a payoff component that is irrelevant to unilateral deviations from sensitivity to the accounting date of that component. Strategic equivalence need not preserve welfare or the value of changing an opponent's future policy.
 
 \section{Two repairs}\label{sec:repair}
 
@@ -129,21 +154,23 @@ The repaired weight depends only on the quality of the agent's own past actions.
 We formalized the statements in Lean~4 (v4.36.0) \cite{demoura2021lean4} with Mathlib \cite{mathlib2020}. The development defines the game, Bernoulli-logit policies with their analytic score derivatives, exact values and joint advantages, and Equation~\eqref{eq:aa} as an exact expectation over all trajectories. It proves:
 \begin{itemize}
 \item Proposition~\ref{prop:cov} in finite-action form, Corollary~\ref{cor:iff}, Corollary~\ref{cor:pure}, and the score identity (softmax, and Bernoulli with derivatives);
-\item Proposition~\ref{prop:nash} for all deterministic history-dependent deviations of either player, Proposition~\ref{prop:field}, and the fact that the step in Proposition~\ref{prop:dev} is exactly $\alpha F$;
+\item the equilibrium part of Proposition~\ref{prop:nash} for all deterministic history-dependent deviations of either player, Proposition~\ref{prop:field}, and the fact that the step in Proposition~\ref{prop:dev} is exactly $\alpha F$;
 \item Proposition~\ref{prop:dev} for all $\alpha,\beta,\gamma,c>0$;
-\item Proposition~\ref{prop:marg}, and the vanishing part of Proposition~\ref{prop:past} given indifference.
+\item Proposition~\ref{prop:marg}, and the vanishing part of Proposition~\ref{prop:past} given indifference;
+\item the strategic-equivalence control for every $\lambda$: the $\lambda z$ term shifts player~1's return by $\lambda\,\E z$ for every deterministic history-dependent policy against every opponent profile, so deviation gains do not depend on $\lambda$; the field at the uniform equilibrium is $(0,\beta\gamma^3\lambda/4,\beta\gamma^3\lambda/4)$; $\lambda=1$ recovers the original operator; and for $\beta,\gamma>0$ the update vanishes at $\lambda=0$ but not at any $\lambda\neq0$.
 \end{itemize}
-\texttt{\#print axioms} reports only \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound} for every main theorem, and the development contains no \texttt{sorry}. Not formalized: the isolation determinant (checked symbolically with SymPy), mixed deviations (convex combinations of deterministic ones), the aggregation of the per-history identity into a statement about general stochastic games, the numerical remark of Section~\ref{sec:repair}, and sampled generalized advantage estimators.
+\texttt{\#print axioms} reports only \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound} for every main theorem, and the development contains no \texttt{sorry}. Not formalized: the uniqueness argument, Proposition~\ref{prop:aggregate}, the memory control ($\eta$) and the delayed-payment variant, mixed deviations (convex combinations of deterministic ones), the numerical remark of Section~\ref{sec:repair}, and sampled generalized advantage estimators.
 
 \section{Discussion and limitations}
 
 Our results concern the exact-advantage operator of Equation~8. They do not show that AA performs poorly. Moving away from a Nash equilibrium can be desirable in a social dilemma, and the alignment force we characterize is precisely what AA intends. What fails is the claimed equilibrium guarantee. Implementations with learned critics or sampled advantage estimators define different random operators and are not covered by the formal statements. A reading of Appendix~A.8, Equation~66, in which the inner expectation is an unconditional scalar, would define a different operator.
 
-\paragraph{Reproducibility.} The Lean project, and an executable enumeration of the counterexample are available at \url{https://github.com/GalexY3/aa-nash-counterexample}. The formal statements were preregistered before any proof was written (folder \texttt{preregistration}).
+\paragraph{Reproducibility.} The Lean project, executable checks of the equilibrium witness, the state aggregation and the strategic-equivalence control, and the preregistration of the formal statements are available at \url{https://github.com/GalexY3/aa-nash-counterexample}.
 
-\paragraph{Acknowledgements and contributions.} The research question and the idea of the counterexample are the author's, who raised it with the authors of \cite{duque2025aa} in \cite{duque2026issue}. We thank Juan Agustin Duque for his public response, which confirmed the scope issue and proposed the repair analysed in Proposition~\ref{prop:past}. Advantage Alignment, its Equation~8 and Theorem~3 are entirely the work of \cite{duque2025aa}; this note only examines the scope of that theorem. Generative AI tools (Anthropic Claude; OpenAI models) assisted, under the author's direction, with programming, the Lean formalization, and drafting and editing the text. The author takes responsibility for all content. The Lean kernel, not any assistant, certifies the formal results.
+\paragraph{Acknowledgements and contributions.} The research idea is the author's, who raised the counterexample with the authors of \cite{duque2025aa} in \cite{duque2026issue}. Advantage Alignment, its Equation~8 and Theorem~3 are entirely the work of \cite{duque2025aa}; this note only examines the scope of that theorem. We thank Juan Agustin Duque for his public response, which confirmed the scope issue and proposed the repair analysed in Proposition~\ref{prop:past}. Alejandro Panera Pascual conceived and directed the investigation; AI tools were used under his direction for derivations, computational checks, the Lean formalization and manuscript preparation.
 
 \begin{thebibliography}{99}
+\bibitem{candogan2011} O.~Candogan, I.~Menache, A.~Ozdaglar and P.~A.~Parrilo. Flows and Decompositions of Games: Harmonic and Potential Games. \emph{Mathematics of Operations Research} 36(3), 474--503, 2011. \url{https://doi.org/10.1287/moor.1110.0500}.
 \bibitem{duque2025aa} J.~A. Duque, M.~Aghajohari, T.~Cooijmans, R.~Ciuca, T.~Zhang, G.~Gidel, A.~Courville. Advantage Alignment Algorithms. \emph{International Conference on Learning Representations (ICLR)}, 2025. arXiv:2406.14662.
 \bibitem{duque2026issue} J.~A. Duque. Reply to ``Question about Theorem 3: joint advantages at a mixed Nash equilibrium'', GitHub issue \#12, \url{https://github.com/jduquevan/advantage-alignment/issues/12}, 16 November 2026.
 \bibitem{foerster2018lola} J.~Foerster, R.~Y. Chen, M.~Al-Shedivat, S.~Whiteson, P.~Abbeel, I.~Mordatch. Learning with Opponent-Learning Awareness. \emph{AAMAS}, 2018.

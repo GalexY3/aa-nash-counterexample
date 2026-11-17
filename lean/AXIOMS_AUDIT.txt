@@ -12,4 +12,9 @@
 'AaNash.not_nash_after_step' depends on axioms: [propext, Classical.choice, Quot.sound]
 'AaNash.shaping_zero_of_point_mass' depends on axioms: [propext, Classical.choice, Quot.sound]
 'AaNash.repaired_shaping_vanishes_of_indifference' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AaNash.F1L_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AaNash.F1L_at_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AaNash.R1devL_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AaNash.deviation_gain_independent_of_lam' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AaNash.aa_not_invariant_to_strategic_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
 Lean (version 4.36.0, x86_64-w64-windows-gnu, commit 611c117bfaf7b7ae1cfcf246ce6fba31e8f509e9, Release)

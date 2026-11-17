@@ -2,7 +2,10 @@ cff-version: 1.2.0
 message: "If you use this work, please cite it as below, together with Duque et al. (2025)."
 title: "Advantage Alignment Does Not Preserve Mixed Nash Equilibria: A Machine-Checked Counterexample and an Exact Covariance Characterization"
 authors:
-  - alias: GalexY3
+  - family-names: Panera Pascual
+    given-names: Alejandro
+    alias: GalexY
+    affiliation: Universidad de Salamanca
 date-released: 2026-11-17
 url: "https://github.com/GalexY3/aa-nash-counterexample"
 license: MIT
