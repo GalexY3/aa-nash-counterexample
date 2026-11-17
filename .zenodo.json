@@ -1,0 +1,15 @@
+{
+  "title": "Advantage Alignment Does Not Preserve Mixed Nash Equilibria: A Machine-Checked Counterexample and an Exact Covariance Characterization",
+  "upload_type": "publication",
+  "publication_type": "preprint",
+  "creators": [
+    {"name": "Panera Pascual, Alejandro", "affiliation": "Universidad de Salamanca", "orcid": "0009-0008-5194-7399"}
+  ],
+  "description": "Advantage Alignment (Duque et al., ICLR 2025) states that its alignment term vanishes at every Nash equilibrium. We construct a two-stage game whose unique Markov-perfect equilibrium is completely mixed and at which the update is nonzero; after one step the other player has a strictly profitable deviation. The alignment term equals a pre-action weight times the covariance between the agent's score and the welfare externality of its action on the opponent; the update is not invariant to strategic equivalence; and in normal-form games AA reads only the opponent's welfare externality whereas first-order LOLA reads only the interaction that changes the opponent's incentives. Main statements are machine-checked in Lean 4 with Mathlib. Advantage Alignment, its Equation 8 and Theorem 3 are the work of Duque, Aghajohari, Cooijmans, Ciuca, Zhang, Gidel and Courville.",
+  "keywords": ["opponent shaping", "advantage alignment", "Nash equilibrium", "multi-agent reinforcement learning", "game theory", "reciprocity", "Lean 4", "formal verification"],
+  "license": "CC-BY-4.0",
+  "related_identifiers": [
+    {"identifier": "arXiv:2406.14662", "relation": "references", "scheme": "arxiv"},
+    {"identifier": "https://github.com/jduquevan/advantage-alignment/issues/12", "relation": "references", "scheme": "url"}
+  ]
+}
