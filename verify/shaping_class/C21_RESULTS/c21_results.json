@@ -1,0 +1,62 @@
+{
+  "P1": {
+    "2x2": {
+      "max_abs": {
+        "AA": 1.7108594830741115,
+        "AA_past_marginal": 2.0127072468989775e-16,
+        "LOLA": 0.2648637196160073,
+        "LookAhead": 5.440119402178069e-17
+      },
+      "share_nonzero_gt_1e-6": {
+        "AA": 1.0,
+        "AA_past_marginal": 0.0,
+        "LOLA": 1.0,
+        "LookAhead": 0.0
+      }
+    },
+    "3x3": {
+      "max_abs": {
+        "AA": 1.0662609425474683,
+        "AA_past_marginal": 1.8913605995159857e-16,
+        "LOLA": 0.17814576514957936,
+        "LookAhead": 2.921769653522463e-17
+      },
+      "share_nonzero_gt_1e-6": {
+        "AA": 1.0,
+        "AA_past_marginal": 0.0,
+        "LOLA": 1.0,
+        "LookAhead": 0.0
+      }
+    },
+    "3x4": {
+      "max_abs": {
+        "AA": 1.1870262833528125,
+        "AA_past_marginal": 1.3489835468022215e-16,
+        "LOLA": 0.17571913236849251,
+        "LookAhead": 5.318176320914339e-17
+      },
+      "share_nonzero_gt_1e-6": {
+        "AA": 1.0,
+        "AA_past_marginal": 0.0,
+        "LOLA": 1.0,
+        "LookAhead": 0.0
+      }
+    }
+  },
+  "P2": {
+    "agreement": 1.0,
+    "dims": {
+      "N": 6,
+      "dimG1": 5,
+      "dimG2": 4
+    }
+  },
+  "P3": {
+    "solved": 486,
+    "frozen_P3_sign_agreement_player1": 0.360082304526749,
+    "median_abs_displacement_player1": 1.1102230246251565e-16,
+    "median_abs_displacement_player2": 0.0001872845027001968,
+    "posthoc_rival_shift_sign_agreement": 1.0,
+    "beta": 0.001
+  }
+}

@@ -1,6 +1,8 @@
 import AaNash.Basic
 import AaNash.StrategicEquivalence
 import AaNash.WelfareIncentive
+import AaNash.ShapingClass
+import AaNash.ExactAnchoring
 
 /-! Axiom audit: every listed theorem must depend only on propext, Classical.choice, Quot.sound. -/
 #print axioms AaNash.shaping_eq_cov
@@ -30,3 +32,13 @@ import AaNash.WelfareIncentive
 #print axioms AaNash.WI.lola_invariant_own_effect
 #print axioms AaNash.WI.lola_reads_interaction
 #print axioms AaNash.WI.separation
+#print axioms AaNash.SC.preservesNash_of_gated
+#print axioms AaNash.SC.gated_of_preservesNash_of_ginv
+#print axioms AaNash.SC.exists_ginv
+#print axioms AaNash.SC.preservesNash_iff_gated
+#print axioms AaNash.SC.not_gated_displaces
+#print axioms AaNash.SC.shaped_fixed_point_iff_gated
+#print axioms AaNash.EA.jac_eq_zero_iff_const
+#print axioms AaNash.EA.rival_fixed_iff_indifferent
+#print axioms AaNash.EA.shaper_strategy_anchored
+#print axioms AaNash.EA.shaping_cannot_move_shaper

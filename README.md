@@ -27,6 +27,16 @@ Preprint: [`paper/main.pdf`](paper/main.pdf) (source `paper/main.tex`).
 - **Repairs.** Marginalizing the opponent's current advantage removes the term for every policy.
   The authors' suggested repair (issue #12) preserves mixed Markov-perfect equilibria, but can
   suppress the alignment signal.
+- **Which shaping terms preserve equilibria (new).** A local shaping term that is bilinear in the
+  payoffs vanishes at every interior Nash equilibrium if and only if it is *incentive-gated*: it reads
+  the agent's own payoff only through its incentive gap or the opponent's payoff only through the
+  opponent's incentive gap. AA and first-order LOLA are not gated; LookAhead and the authors' repair
+  are. Corollary: no bilinear shaping term can both preserve interior equilibria and act at them.
+  Machine-checked for bilinear maps between arbitrary vector spaces (`lean/AaNash/ShapingClass.lean`).
+- **Where the displacement goes (new).** If only one player shapes and the opponent is naive, the
+  shaper's equilibrium strategy is pinned exactly and only the opponent's strategy moves. This is the
+  learning-dynamics counterpart of Tsebelis's (1989) observation on mixed equilibria and is not claimed
+  as a new principle (`lean/AaNash/ExactAnchoring.lean`).
 
 **Verification.**
 - `lean/` (Lean 4.36 + Mathlib): `lake exe cache get && lake build && lake env lean AaNash/Axioms.lean`.
@@ -39,6 +49,13 @@ Preprint: [`paper/main.pdf`](paper/main.pdf) (source `paper/main.tex`).
   hashes, not redistributed) on the λ family: no movement at λ = 0, movement with the sign of λ otherwise,
   in all 80 exact-advantage configurations.
 - `preregistration/`: the formal statements, fixed before any proof was written (in Spanish).
+- `verify/shaping_class/`: numerical checks of the gating theorem (2000 games per size; preregistered
+  predictions P1-P2 pass, P3 failed as frozen) and of the displacement (500 games per size and term; see
+  `preregistration/PREREG_C21*.md` for the frozen criteria and which ones failed).
+
+**Preprint status.** `paper/main.tex` now includes the gating theorem (Section 7), a related-work
+section and an ASA-style reference list. `paper/main.pdf` predates these additions; rebuild it with
+`tectonic main.tex` in `paper/`.
 
 **Credit.** Advantage Alignment, Eq. 8 and Theorem 3 are the work of Duque, Aghajohari,
 Cooijmans, Ciuca, Zhang, Gidel and Courville. J. A. Duque publicly confirmed the scope issue
