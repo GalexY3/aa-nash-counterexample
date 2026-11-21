@@ -31,8 +31,9 @@ Preprint: [`paper/main.pdf`](paper/main.pdf) (source `paper/main.tex`).
   payoffs vanishes at every interior Nash equilibrium if and only if it is *incentive-gated*: it reads
   the agent's own payoff only through its incentive gap or the opponent's payoff only through the
   opponent's incentive gap. AA and first-order LOLA are not gated; LookAhead and the authors' repair
-  are. Corollary: no bilinear shaping term can both preserve interior equilibria and act at them.
-  Machine-checked for bilinear maps between arbitrary vector spaces (`lean/AaNash/ShapingClass.lean`).
+  are. Every term that is not gated is nonzero at some interior equilibrium, which then stops being a
+  fixed point of the shaped update (it is moved or removed). The statement is elementary linear algebra;
+  its use is the classification of existing methods by the payoff components they read. Machine-checked for bilinear maps between arbitrary vector spaces (`lean/AaNash/ShapingClass.lean`).
 - **Where the displacement goes (new).** If only one player shapes and the opponent is naive, the
   shaper's equilibrium strategy is pinned exactly and only the opponent's strategy moves. This is the
   learning-dynamics counterpart of Tsebelis's (1989) observation on mixed equilibria and is not claimed
@@ -51,11 +52,14 @@ Preprint: [`paper/main.pdf`](paper/main.pdf) (source `paper/main.tex`).
 - `preregistration/`: the formal statements, fixed before any proof was written (in Spanish).
 - `verify/shaping_class/`: numerical checks of the gating theorem (2000 games per size; preregistered
   predictions P1-P2 pass, P3 failed as frozen) and of the displacement (500 games per size and term; see
-  `preregistration/PREREG_C21*.md` for the frozen criteria and which ones failed).
+  `preregistration/PREREG_C21*.md` for the frozen criteria and which ones failed). The two C21
+  preregistrations were committed in the author's private research repository before the corresponding
+  checks (20/11/2026, 16:52 and 17:13 CET) and published here together with the results, so their
+  freeze times cannot be verified from this repository's history alone.
 
-**Preprint status.** `paper/main.tex` now includes the gating theorem (Section 7), a related-work
-section and an ASA-style reference list. `paper/main.pdf` predates these additions; rebuild it with
-`tectonic main.tex` in `paper/`.
+**Preprint status.** `paper/main.tex` and `paper/main.pdf` (11 pages, built with tectonic 0.17 on
+21/11/2026) include the gating theorem (Section 8), a related-work section and an ASA-style reference
+list. The archived v1.0.0 release (Zenodo) predates these additions.
 
 **Credit.** Advantage Alignment, Eq. 8 and Theorem 3 are the work of Duque, Aghajohari,
 Cooijmans, Ciuca, Zhang, Gidel and Courville. J. A. Duque publicly confirmed the scope issue
